@@ -6,6 +6,13 @@ sudo apt update
 sudo apt install stress-ng lm-sensors
 ```
 
+## On a terminal for monitoring
+
+```bash
+watch -n 2 sensors
+```
+## On a sparate terminal
+
 ```bash
 for cpu in 0 2 8; do
     echo "===== TESTING CPU $cpu ====="
@@ -18,12 +25,6 @@ for cpu in 0 2 8; do
         --metrics-brief \
         2>&1 | tee "$HOME/stress-cpu${cpu}.log"
 done
-```
-
-## On a separate terminal
-
-```bash
-watch -n 2 sensors
 ```
 
 ## Timestamps for temp signatures
