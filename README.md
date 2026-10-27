@@ -61,14 +61,14 @@ taskset -c 2,8 stress-ng --cpu 2 --cpu-method all --verify \
   --timeout 10m --metrics-brief 2>&1 | tee stress-core2-both-threads.log
 ```
 
-For comparison, we can test both threads of physical core 0:
+### For comparison, we can test both threads of physical core 0:
 
 ```bash
 taskset -c 0,6 stress-ng --cpu 2 --cpu-method all --verify \
   --timeout 10m --metrics-brief 2>&1 | tee stress-core0-both-threads.log
 ```
 
-Collected tests results evidences:
+## Collect tests results evidences:
 
 ```bash
 journalctl -k --since "$TEST_START" --no-pager \
