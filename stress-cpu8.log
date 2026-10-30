@@ -1,0 +1,6 @@
+stress-ng: info:  [43990] setting to a 600 second (10 mins, 0.00 secs) run per stressor
+stress-ng: info:  [43990] dispatching hogs: 1 cpu
+stress-ng: info:  [43990] successful run completed in 600.00s (10 mins, 0.00 secs)
+stress-ng: info:  [43990] stressor       bogo ops real time  usr time  sys time   bogo ops/s     bogo ops/s
+stress-ng: info:  [43990]                           (secs)    (secs)    (secs)   (real time) (usr+sys time)
+stress-ng: info:  [43990] cpu             1040713    600.00    599.87      0.00      1734.52        1734.90
